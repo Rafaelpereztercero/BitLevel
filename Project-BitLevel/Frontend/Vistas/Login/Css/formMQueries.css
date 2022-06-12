@@ -1,0 +1,44 @@
+/* 
+MEDIA QUERIES
+
+Breakpoint for TABLETS ( min-width : 760 px )
+Breakpoint for SMALL DESKTOP / DESKTOP ( min-width : 1024 px )
+
+*/
+/* TABLET VIEW BREAKPOINT ================================================================================== */
+
+@media only screen and (min-width : 760px) {
+
+    .bg-container{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+}
+
+@media only screen and (min-width : 1024px) {
+
+    .bg-container{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    #form{
+        left: 20%;
+    }
+
+}
+
+@media only screen and (min-width : 1440px) {
+
+    .bg-container{
+
+        margin-left: 32%;
+        margin-right: 32%;
+    }
+
+    #form{
+        left: 22%;
+    }
+
+}

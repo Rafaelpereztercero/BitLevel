@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bitlevel project crypto portfolio management" />
+    <meta name="keywords" content="Cryptos, Criptomonedas, Blockchain, Bitcoin, Ethereum, Exchange" />
+    <meta name="author" content="Heber M.Rodriguez Cabrera, Rafael Perez Tercero, Kevin Coaquira Choquecalleta" />
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../Css/formStyle.css" />
+    <link rel="stylesheet" href="../Css/formMQueries.css" />
+    <link rel="stylesheet" href="#" />
+    <link rel="stylesheet" href="#" />
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Font awesome icons CDN -->
+    <script src="https://kit.fontawesome.com/a35b8b496f.js" crossorigin="anonymous"></script>
+
+    <!-- Tab icon here -->
+    <link rel="icon" type="image/x-icon" href="../../../Assets/Images/Logotypev2.png" />
+    <title>BitLevel - Register</title>
+</head>
+
+<body>
+    <main class="bg-container">
+        <section class="bg-form-container">
+            <img id="bg-form-logo" src="../../../Assets/Images/Form-bg-90opacity.png" alt="bg-img" />
+            <!-- FORM CONTAINER -->
+            <form action="" method="" id="form">
+                <!-- REGISTER FORM VIEW -->
+                <div class="registerContainer">
+                    <h1>Register</h1>
+                    <!-- INPUT MAIL -->
+                    <div class="inputs">
+                        <input type="email" name="mail" id="mail" required autofocus autocomplete="off" />
+                        <span class="line"></span>
+                        <label for="#">Email</label>
+                        <p class="warnings"></p>
+                    </div>
+                    <!-- INPUT USERNAME -->
+                    <div class="inputs">
+                        <input type="text" name="username" id="username" required autocomplete="off"/>
+                        <span class="line"></span>
+                        <label for="#">Username</label>
+                        <p class="warnings" id="nameWarning"></p>
+                    </div>
+                    <!-- INPUT PASSWORD -->
+                    <div class="inputs">
+                        <input type="password" name="password" id="password" required autocomplete="off"/>
+                        <span class="line"></span>
+                        <label for="#">Password</label>
+                        <p class="warnings"></p>
+                    </div>
+                    <!-- SUBMIT BUTTON -->
+                    <input type="button" onclick="Register()" value="Submit" />
+                </div>
+
+                <div class="bottomNav">
+                    <!-- FORGOT PASSWORD SECTION -->
+                    <div class="text-forgot">
+                        <a class="text1" href="../../Login/Html/loginForm.html">
+                            Already have an account?
+                        </a>
+                    </div>
+                    <!-- GO BACK NAVIGATION -->
+                    <div class="goLandingPage">
+                        <a href="#marketplace-view">
+                            <p>Go back</p>
+                            <img src="../../../Assets/Icons/chevron-right.svg" alt="right-arrow" />
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="../Js/index.js"></script>
+</body>
+</html>

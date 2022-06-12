@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #717fe0;
+    --color-danger: #f6727e;
+    --color-success: #2fad86;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: #rbga(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+    
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+    
+    --box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+html { height: 100% }
+
+body{
+    background: linear-gradient(45deg, #181a1e, #414345); 
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*CLASE PARA OCULTAR ELEMENTOS*/
+.displayed{
+    display: none;
+}
+.registerContainer.displayed {
+    display: none;
+}
+.bottomNav.displayed {
+    display: none;
+}
+
+
+
+.bg-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(../../../Assets/Images/background-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-form-container{
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../../../Assets/Images/Register-bg-90opacity.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+#bg-form-logo{
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#form {
+    position: absolute;
+    z-index: 10;
+    top: 6rem;
+    left: 15%;
+    height: 450px;
+    min-width: 352px;
+    padding: 40px 40px 6px 40px;
+}
+
+.registerContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    height: 100%;
+}
+
+.registerContainer h1{
+    user-select: none;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.inputs {
+    position: relative;
+    width: 100%;
+    padding: 6px;
+}
+
+.inputs input {
+    background: none;
+    width: 100%;
+    color: #c6c6c6;
+    font-size: 1.2rem;
+    padding: 10px 5px 0px 5px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.inputs input:focus {
+    outline: none;
+    color: #fff;
+}
+
+label {
+    color: #c6c6c6;
+    font-size: 1rem;
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -1.2rem;
+    font-size: 14px;
+    color: rgb(208, 208, 208);
+}
+
+.line {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.line::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, var(--color-primary), #000);
+    transition: 0.4s ease width;
+    left: 0;
+}
+
+input:focus ~ .line::before {
+    width: 100%;
+}
+
+input[type="button"]{
+    width: 100%;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    padding: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #c6c6c6;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+input[type="button"]:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#sendCode {
+    margin-top: 1rem;
+    padding: 4px;
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 100px;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+#sendCode:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.bottomNav {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.warnings {
+    position: relative;
+    width: 260px;
+    color: var(--color-warning);
+    font-size: 0.7rem;
+}
+
+.text-forgot {
+    position: relative;
+}
+
+.text-forgot a{
+    cursor: pointer;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+.text-forgot a:hover {
+    color: #fff;
+}
+
+.goLandingPage {
+    position: relative;
+}
+
+.goLandingPage a{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100px;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: all 200ms ease;
+}
+
+.goLandingPage a img{
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    transition: all 200ms ease;
+}
+
+.goLandingPage a:hover {
+    color: #fff;
+    width: 108px;
+}
+.goLandingPage a:hover img{
+    background-color: #fff;
+}
+
+/* RESET PASSWORD STYLES PHASES */
+#phase1,
+#phase3{
+    position: absolute;
+    z-index: 10;
+    top: 20rem;
+    left: 5rem;
+    width: 300px;
+}
+
+#phase2{
+    position: absolute;
+    z-index: 10;
+    top: 16rem;
+    left: 5rem;
+    width: 300px;
+}
+
+#phase2 .inputs {
+    margin-bottom: 1rem;
+}
+
+#phase1 input,
+#phase2 input {
+    background: none;
+    width: 100%;
+    color: #c6c6c6;
+    font-size: 1.2rem;
+    padding: 10px 5px 0px 5px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+#phase1 input:focus,
+#phase2 input:focus {
+    outline: none;
+    color: #fff;
+}
+
+.next-bttn {
+    /* ESTILOS DE BOTON NEXT VISTA RESET PASSSWORDK*/
+}
+
+.container-form-btn {
+    position: absolute;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 24rem;
+    left: 4rem;
+}

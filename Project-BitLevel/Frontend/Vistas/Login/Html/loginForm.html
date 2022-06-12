@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bitlevel project crypto portfolio management" />
+    <meta name="keywords" content="Cryptos, Criptomonedas, Blockchain, Bitcoin, Ethereum, Exchange" />
+    <meta name="author" content="Heber M.Rodriguez Cabrera, Rafael Perez Tercero, Kevin Coaquira Choquecalleta" />
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../Css/formStyle.css" />
+    <link rel="stylesheet" href="../Css/formMQueries.css" />
+    <link rel="stylesheet" href="#" />
+    <link rel="stylesheet" href="#" />
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Tab icon here -->
+    <link rel="icon" type="image/x-icon" href="../../../Assets/Images/Logotypev2.png" />
+    <title>BitLevel - Login</title>
+</head>
+
+<body>
+    <main class="bg-container">
+        <section class="bg-form-container">
+            <img id="bg-form-logo" src="../../../Assets/Images/Form-bg-90opacity.png" alt="bg-img" />
+
+            <!-- FORM CONTAINER -->
+            <form action="" method="" id="form">
+                <!-- LOGIN FORM VIEW -->
+                <div class="registerContainer" id="bit-view-1">
+                    <h1 id="bit-title">Login</h1>
+
+                    <!-- INPUT EMAIL OR USERNAME -->
+                    <div id="usr"class="inputs">
+                        <input type="text" name="user" id="user" autofocus required autocomplete="off" />
+                        <span class="line"></span>
+                        <label for="#">Email or Username</label>
+                        <p class="warnings"></p>
+                    </div>
+
+                    <!-- INPUT PASSWORD -->
+                    <div id="pass" class="inputs">
+                        <input type="password" name="password" id="password" required autocomplete="off"/>
+                        <span class="line"></span>
+                        <label for="#">Password</label>
+                        <p class="warnings" id="nameWarning"></p>
+                    </div>
+
+                    <!-- INPUT VERIFICATION CODE -->
+                    <div id="code"class="inputs displayed">
+                        <input type="password" name="contrasenya" id="otp" required autocomplete="off"/>
+                        <span class="line"></span>
+                        <label for="#">Verification code</label>
+                        <p class="warnings"></p>
+                    </div>
+                    <input id="nextStep" type="button" onclick="sendOTP()" value="Next"  />
+                    <!-- SUBMIT BUTTON -->
+                    <input id="send"type="button" onclick="login()" class="displayed"value="Login"  />
+                </div>
+
+                <div class="bottomNav" id="bit-view-2">
+    
+                    <!-- FORGOT PASSWORD SECTION -->
+                    <div class="text-forgot">
+                        <a class="text1" onclick="loadResetView()">
+                            Forgot Password?
+                        </a>
+                    </div>
+                    <!-- GO BACK NAVIGATION -->
+                    <div class="goLandingPage" id="bit-view-1">
+                        <a href="../../Marketplace/html/Marketplace.html">
+                            <p>Go back</p>
+                            <img src="../../../Assets/Icons/chevron-right.svg" alt="right-arrow" />
+                        </a>
+                    </div>
+                </div>
+            </form>
+
+            <!-- RESET PASSWORD VIEWS PHASE BY PHASE -->
+
+            <!-- INPUT VERIFICATION CODE // PHASE 1 -->
+            <div class="displayed" id="phase1">
+                <input type="text" name="user2" id="user2" required autocomplete="off"/>
+                <span class="line"></span>
+                <label for="#">Email or Username</label>
+            </div>
+
+            <!-- INPUT PASSWORD // PHASE 2 -->
+            <div id="phase2" class="displayed">
+                <div class="inputs">
+                    <input type="password" name="password1" id="password2" required autocomplete="off"/>
+                    <span class="line"></span>
+                    <label for="#">Actual Password</label>
+                </div>
+
+                <div class="inputs">
+                    <input type="password" name="password2" id="password3" required autocomplete="off"/>
+                    <span class="line"></span>
+                    <label for="#">New Password</label>
+                </div>
+            </div>
+
+            <div id="phase3" class="displayed">
+                <div class="inputs">
+                    <input type="text" name="code" id="otp2" required autocomplete="off"/>
+                    <span class="line"></span>
+                    <label for="#">Verification code</label>
+                </div>
+            </div>
+            <!--INPUT PHASES-->
+
+            <!-- 1 -->
+            <div class="displayed" id="part1">
+                <input class="next-bttn" onclick="loadFirstPhase()" type="submit" value="Next">
+            </div>
+            <!-- 2 -->
+            <div class="displayed" id="part2">
+                <input class="next-bttn" onclick="loadSecondPhase()" type="submit" value="Next">
+            </div>
+            <!-- 3 -->
+            <div class="displayed" id="part3">
+                <input class="next-bttn" onclick="resetPassword()" type="submit" value="Change Password">
+            </div>
+        </section>
+    </main>
+
+    <script src="../Js/index.js"></script>
+    <script src="../Js/cookies.js"></script>
+</body>
+</html>

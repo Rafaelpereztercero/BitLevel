@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bitlevel project crypto portfolio management" />
+    <meta name="keywords" content="Cryptos, Criptomonedas, Blockchain, Bitcoin, Ethereum, Exchange" />
+    <meta name="author" content="Heber M.Rodriguez Cabrera, Rafael Perez Tercero, Kevin Coaquira Choquecalleta" />
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="stylesheet" href="../css/MediaQueries.css" />
+    <link rel="stylesheet" href="#" />
+    <link rel="stylesheet" href="#" />
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Tab icon here -->
+    <link rel="icon" type="image/x-icon" href="../../../Assets/Images/Logotypev2.png" />
+    <title>BitLevel - User Profile</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navigation">
+            <!-- Logotype -->
+            <img id="top-left-logo" src="../../../Assets/Images/Logotypev4-dark.png" alt="Logotype" />
+
+            <!-- Hamburger button menu -->
+            <div id="burger-menu" class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+
+
+
+            <!-- Switch theme button + User profile image -->
+            <div class="themebttnimg">
+
+                <!-- Level Up get premium button -->
+                <div id= "premium-bttn" class="displayed">
+                    <a href="#" id="top-link-levelup">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <img src="../../../Assets/Icons/level-up-icon.svg" alt="levelup-icon" />
+                        <p>Level</p>
+                        <p>Up</p>
+                    </a>
+                </div>
+            
+                <!-- Switch theme button -->
+                <div class="switch-toggle">
+                    <input type="checkbox" id="themeSwitch">
+                    <label for="themeSwitch" ></label>
+                </div>
+
+                <!-- Profile image -->
+                <a class="PimgContainer" href="../../UserProfile/html/Profile-index.html">
+                    <img src="../../../Assets/Images/default-user.png" alt="userProfileImage" id="bit-profileImg"/>
+                    <div id="div-status">
+                       
+                    </div>
+                </a>
+            </div>
+
+            <!-- Aside Menu -->
+            <section class="aside-menu">
+                <div id="bit-log-username"></div>
+                <div id="bit-log-buttons">
+                <!-- Login + Register buttons -->
+                    <div class="log-buttons">
+                        <div class="login-button">
+                            <a href="../../Login/Html/loginForm.html">Login</a>
+                        </div>
+                        <div class="register-button">
+                            <a href="../../Register/Html/form.html">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav-links">
+                  <li>
+                    <img src="../../../Assets/Icons/level-up-icon.svg" alt="levelup-icon" />
+                    <a class="nav-link" id="aside-link-levelup">Level Up > Premium</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/Currency-icons/coins-icon.svg" alt="coins-icon" />
+                    <a class="nav-link" href="../../Marketplace/html/Marketplace.html">Marketplace</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/file-text.svg" alt="port-icon" />
+                    <a class="nav-link" href="../../Portolio/html/Portfolio.html">Portafolio</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/transaction-icon.svg" alt="transaction-icon" />
+                    <a class="nav-link" href="#">Transaction history</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/news-icon.svg" alt="news-icon" />
+                    <a class="nav-link" href="../../News/html/notices.html">News section</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/Transaction/gift.svg" alt="gift-icon" />
+                    <a class="nav-link" href="../../DailyRewards/html/DailyReward.html">Daily rewards</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/Footer/academy-icon.svg" alt="academy-icon" />
+                    <a class="nav-link" href="#">BitLevel Academy</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/Footer/faq-icon.svg" alt="faq-icon" />
+                    <a class="nav-link" href="../../FYQ/html/FyQ.html">FAQ</a>
+                  </li>
+                
+                    <li>  <div id="bit-logout" onclick="eliminar()">
+                        <img src="../../../Assets/Icons/logout-icon.svg" alt="logout-icon" />
+                        <a class="nav-link" href="#">Logout</a>
+                    </div>
+                    </li>
+                    
+                </ul>
+
+                <div class="aside-socials">
+                    <!-- Github -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/github-icon.svg" alt="github-icon">
+                        </a>
+                    </div>
+                    <!-- Discord community -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/discord-icon.svg" alt="discord-icon">
+                        </a>
+                    </div>
+                    <!-- Instagram -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/instagram-icon.svg" alt="instagram-icon">
+                        </a>
+                    </div>
+                    <!-- Devs section -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/developers-icon.svg" alt="devs-icon">
+                        </a>
+                    </div>
+                </div>
+            </section>
+          </nav>
+    </header>
+
+    <main>
+        <article class="title-container">
+            <h1>User Profile</h1>
+        </article>
+
+        <section class="general-content">
+
+            <!-- AVATAR PICTURE CHANGE -->
+            <div class="image-container">
+                <!-- IMAGE -->
+                <img id="userProfile" src="../../../Assets/Images/default-user.png" alt="user-image" />
+                <!-- CONTENIDO DINAMICO -->
+
+                <div class="profile-picture-edit">
+                    <label for="input-file">
+                        <img src="../../../Assets/Icons/edit-3.svg" alt="pencil" />
+                        <div id="tpye-input"> <input type="file" accept=".png, .jpg, .jpeg, .gif" id="input-file" />
+                        </div>
+
+                    </label>
+                </div>
+            </div>
+
+            <!-- EDITABLE INPUTS -->
+            <div class="editable-inputs">
+                <!-- FLEX CONTAINER -->
+
+                <!-- EMAIL CHANGE SECTION -->
+                <div class="email-section">
+                    <div class="title-section">
+                        <img src="../../../Assets/Icons/mail.svg" alt="mail-card-icon" />
+                        <h3>Email address</h3>
+                    </div>
+                    <div class="actual-email">
+                        <p id="mailUser">xxxxx@gmail.com</p> <!-- CONTENIDO DINAMICO -->
+                    </div>
+                    <div class="edit-pencil" id="edit-email">
+                        <img src="../../../Assets/Icons/edit-3.svg" alt="pencil-icon" />
+                    </div>
+                </div>
+
+                <!-- PASSWORD CHANGE SECTION -->
+                <div class="password-section">
+                    <div class="title-section">
+                        <img src="../../../Assets/Icons/key.svg" alt="key-icon" />
+                        <h3>Password</h3>
+                    </div>
+                    <div class="actual-password">
+                        <!-- OCULTO POR DEFECTO -->
+                        <p id="userPassword">···············</p> <!-- CONTENIDO DINAMICO -->
+                    </div>
+                    <div class="edit-pencil" id="edit-password">
+                        <img src="../../../Assets/Icons/edit-3.svg" alt="pencil-icon" />
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <h1>Payment Methods</h1>
+
+        <div id="card-container" class="user-cards">
+
+        </div>
+
+        <div class="card-form-container">
+            <!-- CARD FORMAT SECTION -->
+            <div class="card-container">
+
+                <!-- FORNT VIEW -->
+                <div class="front">
+                    <div class="image">
+                        <div>
+                            <img src="../../../Assets/Images/card-chip-img.png" alt="chip-icon" />
+                            <img src="../../../Assets/Images/card-contactless-img.png" alt="concactless-icon" />
+                        </div>
+                        <div>
+                            <img src="../../../Assets/Images/card-visa-img.png" alt="visa-logo" />
+                            <img src="../../../Assets/Images/Logotypev2.png" alt="bitlevel-logo" />
+                        </div>
+                    </div>
+
+                    <!-- CARD NUMBER -->
+                    <div class="card-number-box">################</div>
+
+                    <div class="flexbox">
+                        <!-- NAME -->
+                        <div class="box">
+                            <span>card holder</span>
+                            <div class="card-holder-name">satoshi nakamoto</div>
+                        </div>
+                        <!-- EXPIRATION MONTH AND YEAR -->
+                        <div class="box">
+                            <span>expires</span>
+                            <div class="expiration">
+                                <span class="exp-month">mm</span>
+                                <span class="exp-year">yy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACK VIEW -->
+                <div class="back">
+                    <div class="stripe">
+                        <div class="box">
+                            <span>cvv</span>
+                            <div class="cvv-box"></div>
+                            <img src="../../../Assets/Images/card-visa-img.png" alt="visa-logo">
+                            <img src="../../../Assets/Images/Logotypev2.png" alt="bitlevel-logo">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- CARD INPUTS CHANGE SECTION -->
+            <form action="" class="card-section">
+
+                <div class="inputBox">
+                    <span>card number</span>
+                    <input id="card-digits"type="text" maxlength="16" class="card-number-input">
+                </div>
+
+                <div class="inputBox">
+                    <span>card holder</span>
+                    <input id="card-holder" type="text" maxlength="16" class="card-holder-input">
+                </div>
+
+                <div class="flexbox">
+
+                    <!-- EXPIRATION MONTH INPUT -->
+                    <div class="inputBox">
+                        <span>expiration mm</span>
+                        <select id="card-expMonth"name="" id="" class="month-input">
+                            <option value="month" selected disabled>month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+
+                    <!-- EXPIRATION YEAR INPUT -->
+                    <div class="inputBox">
+                        <span>expiration yy</span>
+                        <select id="card-expYear"name="" id="" class="year-input">
+                            <option value="year" selected disabled>year</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+
+                    <div class="inputBox">
+                        <span>cvv</span>
+                        <input id="card-cvc" type="text" maxlength="3" class="cvv-input" />
+                    </div>
+
+                </div>
+
+                <!-- BOTON PARA EJECUTAR FUNCION DE ACTUALIZAR TRAJETA -->
+                <div class="submit-button" onclick="createCard()">
+                    <h3>Submit</h3>
+                </div>
+            </form>
+
+        </div>
+
+
+
+    </main>
+
+    <!-- DISPLAY CHANGE EMAIL ON CLICK ================================================================================================= -->
+    <section class="display-change-email display-toggle">
+        <article class="display-change-email-content">
+            <div class="display-change-head">
+                <h1>Change Email</h1>
+                <div class="close-display-email">
+                    <img src="../../../Assets/Icons/x.svg" alt="cross-icon" />
+                </div>
+            </div>
+
+            <div class="description">
+                <p>Enter the new email address and your current password to make the change.</p>
+            </div>
+
+            <form action="">
+                <!-- INPUT MAIL -->
+                <div class="display-inputs">
+                    <input id="mail-old" type="email" name="mail" id="mail" required autofocus autocomplete="off" />
+                    <span class="line"></span>
+                    <label for="#">Email</label>
+                    <p class="warnings"></p>
+                </div>
+                <div class="display-inputs">
+                    <input id="mail-change" type="email" name="mail" id="mail" required autofocus autocomplete="off" />
+                    <span class="line"></span>
+                    <label for="#">New Email</label>
+                    <p class="warnings"></p>
+                </div>
+                <!-- INPUT PASSWORD -->
+                <div class="display-inputs">
+                    <input id="current-password" type="password" name="password" id="password" required
+                        autocomplete="off" />
+                    <span class="line"></span>
+                    <label for="#">Password</label>
+                    <p class="warnings"></p>
+                </div>
+
+                <div class="change-button" onclick="ChangeEmail()">
+                    <h2>Change</h2>
+                </div>
+            </form>
+        </article>
+    </section>
+
+    <!-- DISPLAY ABSOLUTE CHANGE PASSWORD ON CLICK ================================================== -->
+    <section class="display-change-password display-toggle">
+        <article class="display-change-password-content">
+            <div class="display-change-head">
+                <h1>Change Password</h1>
+                <div class="close-display-pass">
+                    <img src="../../../Assets/Icons/x.svg" alt="cross-icon" />
+                </div>
+            </div>
+
+            <div class="description">
+                <p>Enter the actual email and password for set the new password to make the change.</p>
+            </div>
+
+            <form action="">
+                <!-- INPUT MAIL -->
+                <div class="display-inputs">
+                    <input id="mail-password" type="email" name="mail" id="mail" required autofocus
+                        autocomplete="off" />
+                    <span class="line"></span>
+                    <label for="#">Email</label>
+                    <p class="warnings"></p>
+                </div>
+
+                <!-- INPUT PASSWORD -->
+                <div class="display-inputs">
+                    <input id="old-password" type="password" name="password" id="password" required
+                        autocomplete="off" />
+                    <span class="line"></span>
+                    <label for="#">Password</label>
+                    <p class="warnings"></p>
+                </div>
+
+                <!-- INPUT NEW PASSWORD -->
+                <div class="display-inputs">
+                    <input id="new-password" type="password" name="password-2" id="password-2" required
+                        autocomplete="off" />
+                    <span class="line"></span>
+                    <label for="#">New Password</label>
+                    <p class="warnings"></p>
+                </div>
+
+                <div class="change-button" onclick="ChangePassword()">
+                    <h2>Change</h2>
+                </div>
+            </form>
+        </article>
+    </section>
+
+    <!-- DISPLAY ABSOLUTE -- GET PREMIUM LEVEL UP PANEL =============================================-->
+    <section class="display-levelup display-toggle">
+        <article class="display-levelup-content">
+            <div class="triangle"></div>
+            <div class="display-levelup-header">
+                <h1>LEVEL</h1>
+                <h1>UP</h1>
+                <div class="close-display-levelup" id="close-display-levelup">
+                    <img src="../../../Assets/Icons/x.svg" alt="cross-icon" />
+                </div>
+            </div>
+
+            <div class="advantages-container">
+                <h2>Advantages</h2>
+                <ul>
+                    <div>
+                        <li>Discount on operations</li>
+                        <li>Customized price alerts</li>
+                    </div>
+                    <div>
+                        <li>Participate in airdrops</li>
+                        <li>Daily rewards</li>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="pay-btn">
+                <h3>One payment, many savings</h3>
+
+                <div>
+                    <div class="currency-pay">
+                        <!-- <img src="../../../Assets/Icons/Currency-icons/dollar-icon.svg" alt="currency-icon" /> -->
+                        <h4>$ 50</h4>
+                    </div>
+
+                    <div class="button-pay">
+                        <button type="button" value="Become premium" onclick="setUserPremium()">Become Premium</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- FOOTER SECTION ============================================================================ -->
+    <footer>
+        <div class="footImg">
+            <img src="../../../Assets/Images/Logotypev4-ligth.png" alt="bitlevel-logotype" />
+        </div>
+        <div class="footLinks">
+            <!-- SOCIALS SECTION -->
+            <div class="footGroup">
+                <h2>Socials</h2>
+                <!-- Discord community -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/discord-icon.svg" alt="discord-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Discord community</a>
+                </div>
+                <!-- Instagram -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/instagram-icon.svg" alt="instagram-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+                <!-- Twitter -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/twitter-icon.svg" alt="twitter-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+                <!-- Telegram -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/telegram-iconsvg.svg" alt="telegram-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
+                </div>
+            </div>
+            <!-- SUPPORT SECTION -->
+            <div class="footGroup">
+                <h2>Support</h2>
+                <!-- Bitlevel academy -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/academy-icon.svg" alt="academy-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">BitLevel Academy</a>
+                </div>
+                <!-- FAQ -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/faq-icon.svg" alt="FAQ-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">FAQ</a>
+                </div>
+            </div>
+            <!-- ABOUT US SECTION -->
+            <div class="footGroup">
+                <h2>About Us</h2>
+                <!-- Github -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/github-icon.svg" alt="github-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                </div>
+                <!-- Devs section -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/developers-icon.svg" alt="devs-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Devs</a>
+                </div>
+            </div>
+        </div>
+        <!-- Copy-right section -->
+        <div class="copyright">
+            <div>
+                <img src="../../../Assets/Icons/Footer/copyright-icon.svg" alt="copyright-icon">
+                <p>2022 BitLevel</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="../js/card-displays.js"></script>
+    <script src="../../../Common-scripts/displayPremium.js"></script>
+    <script src="../../../Common-scripts/menu-toggle.js"></script>
+    <script src="../../../Common-scripts/changeTheme.js"></script>
+    <script src="../js/load.js"></script>
+</body>
+
+</html>

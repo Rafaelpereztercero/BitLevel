@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bitlevel project crypto portfolio management" />
+    <meta name="keywords" content="Cryptos, Criptomonedas, Blockchain, Bitcoin, Ethereum, Exchange" />
+    <meta name="author" content="Heber M.Rodriguez Cabrera, Rafael Perez Tercero, Kevin Coaquira Choquecalleta" />
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="stylesheet" href="../css/MediaQueries.css" />
+    <link rel="stylesheet" href="#" />
+    <link rel="stylesheet" href="#" />
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+
+    <!-- Tab icon here -->
+    <link rel="icon" type="image/x-icon" href="../../../Assets/Images/Logotypev2.png" />
+    <title>Preguntas Frecuentes</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navigation">
+            <!-- Logotype -->
+            <img id="top-left-logo" src="../../../Assets/Images/Logotypev4-dark.png" alt="Logotype" />
+
+            <!-- Hamburger button menu -->
+            <div id="burger-menu" class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+
+
+
+            <!-- Switch theme button + User profile image -->
+            <div class="themebttnimg">
+
+                <!-- Level Up get premium button -->
+                <div id= "premium-bttn" class="displayed">
+                    <a href="#" id="top-link-levelup">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <img src="../../../Assets/Icons/level-up-icon.svg" alt="levelup-icon" />
+                        <p>Level</p>
+                        <p>Up</p>
+                    </a>
+                </div>
+            
+                <!-- Switch theme button -->
+                <div class="switch-toggle">
+                    <input type="checkbox" id="themeSwitch">
+                    <label for="themeSwitch" ></label>
+                </div>
+
+                <!-- Profile image -->
+                <a class="PimgContainer" href="../../UserProfile/html/Profile-index.html">
+                    <img src="../../../Assets/Images/default-user.png" alt="userProfileImage" id="bit-profileImg"/>
+                    <div id="div-status">
+                       
+                    </div>
+                </a>
+            </div>
+
+            <!-- Aside Menu -->
+            <section class="aside-menu">
+                <div id="bit-log-username"></div>
+                <div id="bit-log-buttons">
+                <!-- Login + Register buttons -->
+                    <div class="log-buttons">
+                        <div class="login-button">
+                            <a href="../../Login/Html/loginForm.html">Login</a>
+                        </div>
+                        <div class="register-button">
+                            <a href="../../Register/Html/form.html">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav-links">
+                  <li>
+                    <img src="../../../Assets/Icons/level-up-icon.svg" alt="levelup-icon" />
+                    <a class="nav-link" id="aside-link-levelup">Level Up > Premium</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/Currency-icons/coins-icon.svg" alt="coins-icon" />
+                    <a class="nav-link" href="../../Marketplace/html/Marketplace.html">Marketplace</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/file-text.svg" alt="port-icon" />
+                    <a class="nav-link" href="../../Portolio/html/Portfolio.html">Portafolio</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/transaction-icon.svg" alt="transaction-icon" />
+                    <a class="nav-link" href="#">Transaction history</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/news-icon.svg" alt="news-icon" />
+                    <a class="nav-link" href="../../News/html/notices.html">News section</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/Transaction/gift.svg" alt="gift-icon" />
+                    <a class="nav-link" href="../../DailyRewards/html/DailyReward.html">Daily rewards</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/Footer/academy-icon.svg" alt="academy-icon" />
+                    <a class="nav-link" href="#">BitLevel Academy</a>
+                  </li>
+                  <li>
+                    <img src="../../../Assets/Icons/Footer/faq-icon.svg" alt="faq-icon" />
+                    <a class="nav-link" href="../../FYQ/html/FyQ.html">FAQ</a>
+                  </li>
+                
+                    <li>  <div id="bit-logout" onclick="eliminar()">
+                        <img src="../../../Assets/Icons/logout-icon.svg" alt="logout-icon" />
+                        <a class="nav-link" href="#">Logout</a>
+                    </div>
+                    </li>
+                    
+                </ul>
+
+                <div class="aside-socials">
+                    <!-- Github -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/github-icon.svg" alt="github-icon">
+                        </a>
+                    </div>
+                    <!-- Discord community -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/discord-icon.svg" alt="discord-icon">
+                        </a>
+                    </div>
+                    <!-- Instagram -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/instagram-icon.svg" alt="instagram-icon">
+                        </a>
+                    </div>
+                    <!-- Devs section -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/developers-icon.svg" alt="devs-icon">
+                        </a>
+                    </div>
+                </div>
+            </section>
+          </nav>
+    </header>
+     <!-- DISPLAY ABSOLUTE -- GET PREMIUM LEVEL UP PANEL =============================================-->
+     <section class="display-levelup display-toggle">
+        <article class="display-levelup-content">
+            <div class="triangle"></div>
+            <div class="display-levelup-header">
+                <h1>LEVEL</h1>
+                <h1>UP</h1>
+                <div class="close-display-levelup" id="close-display-levelup">
+                    <img src="../../../Assets/Icons/x.svg" alt="cross-icon" />
+                </div>
+            </div>
+
+            <div class="advantages-container">
+                <h2>Advantages</h2>
+                <ul>
+                    <div>
+                        <li>Discount on operations</li>
+                        <li>Customized price alerts</li>
+                    </div>
+                    <div>
+                        <li>Participate in airdrops</li>
+                        <li>Daily rewards</li>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="pay-btn">
+                <h3>One payment, many savings</h3>
+
+                <div>
+                    <div class="currency-pay">
+                        <!-- <img src="../../../Assets/Icons/Currency-icons/dollar-icon.svg" alt="currency-icon" /> -->
+                        <h4>$ 50</h4>
+                    </div>
+
+                    <div class="button-pay">
+                        <button type="button" value="Become premium" onclick="setUserPremium()">Become Premium</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <div class="contenedorFyQ">
+            <div class="columna">
+                <div class="contenedor-FyQ">
+                    <div class="titulo-FyQ">
+                        <h3>Preguntas Frecuentes</h3>
+                        <!--Search-->
+                        <div class="buscador">
+                            <div class="searchContainer">
+                            <input id="search-bar" type="text" autocomplete="off" placeholder="Search a Question"
+                                onchange="Filter(this.value)">
+                            <img src="../../../Assets/Icons/lupa.svg" class="icon-buscar">
+                            </input>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="item-FyQ">
+                        <div class="pregunta">
+                            <h3>Que es BitLevel?<span>Q</span></h3>
+                            <div class="more"><i>+</i></div>
+                        </div>
+                        <div class="respuesta">
+                            <p>BitLevel es un exchange de criptomonedas donde puedes comprar y vender
+                                Bitcoins, Ethereum, Litecoin, Cardano y muchas más (hay un catálogo muy amplio
+                                que puedes consultar en la web oficial). Además BitLevel tiene su propio
+                                centro de aprendizaje de acceso abierto [<b>BitLevel Academy</b>], que proporciona una
+                                ventanilla
+                                única para recursos de aprendizaje de criptomonedas y blockchain.<span>A</span></p>
+                        </div>
+                        <div class="pregunta">
+                            <h3>Como se habilita BitLevel Authenticator?<span>Q</span></h3>
+                            <div class="more"><i>+</i></div>
+                        </div>
+                        <div class="respuesta">
+                            <p>Inicia sesion en tu cuenta de Bitlevel
+                                y haz click en [<b>Perfil</b>] - [<b>Seguridad</b>].
+                                Seguido le da click [<b>Habilitar BitLevel Authenticator</b>]<span>A</span></p>
+                        </div>
+                        <div class="pregunta">
+                            <h3>Como utilizar el staking bloqueado de BitLevel?<span>Q</span></h3>
+                            <div class="more"><i>+</i></div>
+                        </div>
+                        <div class="respuesta">
+                            <p>El <b>staking bloqueado</b> es donde bloqueas tus activos digitales en
+                                una cadena de bloques de prueba de participación en un período de
+                                tiempo determinado. Esto no solo contribuye a la red, sino que también te permite
+                                obtener recompensas de staking.
+                                <br>
+                                <br>
+                                1.Inicia sesión en tu cuenta de BitLevel y haz clic en [<b>Finanzas</b>] - [<b>BitLevel
+                                    Earn</b>] - [<b>Staking bloqueados</b>]
+                                <br>
+                                2.Elige el activo con el que quires hacer stake, ajusta la duración y luego haz clic en
+                                [<b>Hacer stake ahora</b>]
+                                <br>
+                                3.Para ver tu historial de staking bloqueado, dirígete a [<b>Billetera</b>] -
+                                [<b>Earn</b>] - [<b>Staking bloqueado</b>]
+                                <br>
+                                4.Para canjear tus activos de forma anticipada, haz clic en [<b>Canjear de forma
+                                    anticipada</b>]<span>A</span>
+                            </p>
+                        </div>
+                        <div class="pregunta">
+                            <h3>¿Cuál es la diferencia entre BitLevel Staking y BitLevel Savings?<span>Q</span></h3>
+                            <div class="more"><i>+</i></div>
+                        </div>
+                        <div class="respuesta">
+                            <p>BitLevel Staking se basa en el consenso de prueba de anticipación, lo
+                                que significa que se lleva a cabo en la cadena de bloques mediante el uso
+                                de contratos inteligentes. En cambi, BitLevel Savings no se efectúa en la
+                                cadena de bloques; es un producto financiero que permite que los usuarios de
+                                BitLevel puedan prestar y ganar intereses. Este producto ofrece a los usuarios
+                                beneficios
+                                tales como la flexibilidad para canjear fondos en cualquier momento y la
+                                comodidad de recibir intereses diarios.<span>A</span></p>
+                        </div>
+                        <div class="pregunta">
+                            <h3>Cómo utilizar BitLevel Convert<span>Q</span></h3>
+                            <div class="more"><i>+</i></div>
+                        </div>
+                        <div class="respuesta">
+                            <p>1. Ve a <b>BitLevel Convert.</b>
+                                <br>
+                                2. Selecciona el token que tienes y el token que deseas comprar.
+                                <br>
+                                3.Haz clic en [<b>Vista previa de la conversión</b>]
+                                <br>
+                                4. Haz clic en [<b>Convertir</b>]<span>A</span>
+                            </p>
+                        </div>
+                        <div class="pregunta">
+                            <h3>¿Cómo puedo solicitar y activar mi tarjeta de BitLevel?<span>Q</span></h3>
+                            <div class="more"><i>+</i></div>
+                        </div>
+                        <div class="respuesta">
+                            <p>Antes de todo saber que para solicitar la tarjeta de BitLevel tiene que
+                                completar la <b>Verificación de identidad</b> y residir en una
+                                región donde esta esté disponible.
+                                <br>
+                                <br>
+                                1. Haz clic en el botón de [<b>Empezar</b>] que encontrarás en la página
+                                de la [<b>Tarjeta Visa de BitLevel</b>].
+                                <br>
+                                2. Se te redirigirá a la página de [<b>Solicitar tarjeta de BitLevel</b>]. Aquí
+                                puedes elegir cómo quieres que aparezca tu nombre de la tarjeta. Tras
+                                confirmar tus preferencias, haz clic en [<b>Siguiente</b>].
+                                <br>
+                                <br>
+                                3. A continuación, configura un PIN para tu tarjeta. Lo necesitarás para retirar dinero
+                                en cajeros
+                                automáticos y para efectuar grandes transacciones en tiendas físicas.
+                                <br>
+                                4. Confirma que los datos que le aparece son correctos, acepta los términos de uso, la
+                                política de privacidad,
+                                el contrato de titularidad y el consentimiento KYC. Luego haz clic en [<b>Solicitar</b>]
+                                para completar el proceso.
+                                <br>
+                                5. Si el registro se realiza correctamente, tu tarjeta virtual de BitLevel se emitirá
+                                en ese mismo instante.<span>A</span>
+                            </p>
+                            <div class="pregunta">
+                                <h3>Cómo vincular la tarjeta de BitLevel a Google Pay y Samsung Pay<span>Q</span></h3>
+                                <div class="more"><i>+</i></div>
+                            </div>
+                            <div class="respuesta">
+                                <p><span>A</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- FOOTER SECTION ============================================ -->
+     <footer>
+        <div class="footImg">
+            <img src="../../../Assets/Images/Logotypev4-ligth.png" alt="bitlevel-logotype" />
+        </div>
+        <div class="footLinks">
+            <!-- SOCIALS SECTION -->
+            <div class="footGroup">
+                <h2>Socials</h2>
+                <!-- Discord community -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/discord-icon.svg" alt="discord-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Discord community</a>
+                </div>
+                <!-- Instagram -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/instagram-icon.svg" alt="instagram-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+                <!-- Twitter -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/twitter-icon.svg" alt="twitter-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+                <!-- Telegram -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/telegram-iconsvg.svg" alt="telegram-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
+                </div>
+            </div>
+            <!-- SUPPORT SECTION -->
+            <div class="footGroup">
+                <h2>Support</h2>
+                <!-- Bitlevel academy -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/academy-icon.svg" alt="academy-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">BitLevel Academy</a>
+                </div>
+                <!-- FAQ -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/faq-icon.svg" alt="FAQ-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">FAQ</a>
+                </div>
+            </div>
+            <!-- ABOUT US SECTION -->
+            <div class="footGroup">
+                <h2>About Us</h2>
+                <!-- Github -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/github-icon.svg" alt="github-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                </div>
+                <!-- Devs section -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/developers-icon.svg" alt="devs-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Devs</a>
+                </div>
+            </div>
+        </div>
+        <!-- Copy-right section -->
+        <div class="copyright">
+            <div>
+                <img src="../../../Assets/Icons/Footer/copyright-icon.svg" alt="copyright-icon">
+                <p>2022 BitLevel</p>
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript-->
+    <script src="../js/load.js"></script>
+    <script src="../js/FyQ.js"></script>
+    <script src="../../../Common-scripts/menu-toggle.js"></script>
+    <script src="../../../Common-scripts/changeTheme.js"></script>
+</body>
+
+</html>

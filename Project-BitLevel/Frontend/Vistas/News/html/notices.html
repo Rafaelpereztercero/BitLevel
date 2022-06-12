@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bitlevel project crypto portfolio management" />
+    <meta name="keywords" content="Cryptos, Criptomonedas, Blockchain, Bitcoin, Ethereum, Exchange" />
+    <meta name="author" content="Heber M.Rodriguez Cabrera, Rafael Perez Tercero, Kevin Coaquira Choquecalleta" />
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="stylesheet" href="../css/MediaQueries.css" />
+    <link rel="stylesheet" href="#" />
+    <link rel="stylesheet" href="#" />
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+
+    <!-- Tab icon here -->
+    <link rel="icon" type="image/x-icon" href="../../../Assets/Images/Logotypev2.png" />
+    <title>Notices</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navigation">
+            <!-- Logotype -->
+            <img id="top-left-logo" src="../../../Assets/Images/Logotypev4-dark.png" alt="Logotype" />
+
+            <!-- Hamburger button menu -->
+            <div id="burger-menu" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+
+
+            <!-- Switch theme button + User profile image -->
+            <div class="themebttnimg">
+
+                <!-- Level Up get premium button -->
+                <div id="premium-bttn" class="displayed">
+                    <a href="#" id="top-link-levelup">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <img src="../../../Assets/Icons/level-up-icon.svg" alt="levelup-icon" />
+                        <p>Level</p>
+                        <p>Up</p>
+                    </a>
+                </div>
+
+                <!-- Switch theme button -->
+                <div class="switch-toggle">
+                    <input type="checkbox" id="themeSwitch">
+                    <label for="themeSwitch"></label>
+                </div>
+
+                <!-- Profile image -->
+                <a class="PimgContainer" href="../../UserProfile/html/Profile-index.html">
+                    <img src="../../../Assets/Images/default-user.png" alt="userProfileImage" id="bit-profileImg" />
+                    <div id="div-status">
+
+                    </div>
+                </a>
+            </div>
+
+            <!-- Aside Menu -->
+            <section class="aside-menu">
+                <div id="bit-log-username"></div>
+                <div id="bit-log-buttons">
+                    <!-- Login + Register buttons -->
+                    <div class="log-buttons">
+                        <div class="login-button">
+                            <a href="../../Login/Html/loginForm.html">Login</a>
+                        </div>
+                        <div class="register-button">
+                            <a href="../../Register/Html/form.html">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav-links">
+                    <li>
+                        <img src="../../../Assets/Icons/level-up-icon.svg" alt="levelup-icon" />
+                        <a class="nav-link" id="aside-link-levelup">Level Up > Premium</a>
+                    </li>
+                    <li>
+                        <img src="../../../Assets/Icons/Currency-icons/coins-icon.svg" alt="coins-icon" />
+                        <a class="nav-link" href="../../Marketplace/html/Marketplace.html">Marketplace</a>
+                    </li>
+                    <li>
+                        <img src="../../../Assets/Icons/file-text.svg" alt="port-icon" />
+                        <a class="nav-link" href="../../Portolio/html/Portfolio.html">Portafolio</a>
+                    </li>
+                    <li>
+                        <img src="../../../Assets/Icons/transaction-icon.svg" alt="transaction-icon" />
+                        <a class="nav-link" href="#">Transaction history</a>
+                    </li>
+                    <li>
+                        <img src="../../../Assets/Icons/news-icon.svg" alt="news-icon" />
+                        <a class="nav-link" href="../../News/html/notices.html">News section</a>
+                    </li>
+                    <li>
+                        <img src="../../../Assets/Icons/Transaction/gift.svg" alt="gift-icon" />
+                        <a class="nav-link" href="../../DailyRewards/html/DailyReward.html">Daily rewards</a>
+                    </li>
+                    <li>
+                        <img src="../../../Assets/Icons/Footer/academy-icon.svg" alt="academy-icon" />
+                        <a class="nav-link" href="#">BitLevel Academy</a>
+                    </li>
+                    <li>
+                        <img src="../../../Assets/Icons/Footer/faq-icon.svg" alt="faq-icon" />
+                        <a class="nav-link" href="../../FYQ/html/FyQ.html">FAQ</a>
+                    </li>
+
+                    <li>
+                        <div id="bit-logout" onclick="eliminar()">
+                            <img src="../../../Assets/Icons/logout-icon.svg" alt="logout-icon" />
+                            <a class="nav-link" href="#">Logout</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="aside-socials">
+                    <!-- Github -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/github-icon.svg" alt="github-icon">
+                        </a>
+                    </div>
+                    <!-- Discord community -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/discord-icon.svg" alt="discord-icon">
+                        </a>
+                    </div>
+                    <!-- Instagram -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/instagram-icon.svg" alt="instagram-icon">
+                        </a>
+                    </div>
+                    <!-- Devs section -->
+                    <div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <img src="../../../Assets/Icons/Footer/developers-icon.svg" alt="devs-icon">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>
+
+    <!-- DISPLAY ABSOLUTE -- GET PREMIUM LEVEL UP PANEL =============================================-->
+    <section class="display-levelup display-toggle">
+        <article class="display-levelup-content">
+            <div class="triangle"></div>
+            <div class="display-levelup-header">
+                <h1>LEVEL</h1>
+                <h1>UP</h1>
+                <div class="close-display-levelup" id="close-display-levelup">
+                    <img src="../../../Assets/Icons/x.svg" alt="cross-icon" />
+                </div>
+            </div>
+
+            <div class="advantages-container">
+                <h2>Advantages</h2>
+                <ul>
+                    <div>
+                        <li>Discount on operations</li>
+                        <li>Customized price alerts</li>
+                    </div>
+                    <div>
+                        <li>Participate in airdrops</li>
+                        <li>Daily rewards</li>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="pay-btn">
+                <h3>One payment, many savings</h3>
+
+                <div>
+                    <div class="currency-pay">
+                        <!-- <img src="../../../Assets/Icons/Currency-icons/dollar-icon.svg" alt="currency-icon" /> -->
+                        <h4>$ 50</h4>
+                    </div>
+
+                    <div class="button-pay">
+                        <button type="button" value="Become premium" onclick="setUserPremium()">Become Premium</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <br> <br>
+        <div class="contenedor-notice-title">
+
+            <h3 class="contenedor-notice-title2">BitLevel News</h3>
+        </div>
+        <div class="contenedor-notice">
+            <div class="tarjeta-notice">
+                <figure>
+                    <img src="../../../Assets/Images/notice3" alt="">
+                </figure>
+                <div class="contenido-notice">
+                    <a href="https://es.cointelegraph.com/news/ninth-negative-weekly-close-for-bitcoin-altcoins-losing-ground-against-bitcoin"
+                        class="link-notice">
+                        <span class="post-card_title-link">Noveno cierre semanal negativo para Bitcoin: ¿Las altcoins
+                            pierden terreno frente a Bitcoin?</span></a>
+                </div>
+            </div>
+            <div class="tarjeta-notice">
+                <figure>
+                    <img src="../../../Assets/Images/notice2.jpg" alt="">
+                </figure>
+                <div class="contenido-notice">
+                    <a href="https://es.cointelegraph.com/news/bitcoin-long-term-hodlers-begin-distribution-which-preceded-btc-price-bottoms"
+                        class="link-notice">
+                        <span class="post-card_title-link">Corea del Sur intensifica las investigaciones y regulaciones
+                            sobre criptomonedas</span>
+                    </a>
+                </div>
+            </div>
+            <div class="tarjeta-notice">
+                <figure>
+                    <img src="../../../Assets/Images/notice1.jpg" alt="">
+                </figure>
+                <div class="contenido-notice">
+                    <a href="https://es.cointelegraph.com/news/bitcoin-long-term-hodlers-begin-distribution-which-preceded-btc-price-bottoms"
+                        class="link-notice">
+                        <span class="post-card_title-link">Hodlers a largo plazo de Bitcoin comienzan la 'distribución'
+                            que precedió a los precios mínimos de BTC</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-notice2">
+            <div class="tarjeta-notice">
+                <figure>
+                    <img src="../../../Assets/Images/notice6.jpg" alt="">
+                </figure>
+                <div class="contenido-notice">
+                    <a href="https://es.cointelegraph.com/news/total-crypto-market-cap-risks-a-dip-below-1-trillion-if-these-3-metrics-don-t-improve"
+                        class="link-notice">
+                        <span class="post-card_title-link">La capitalización total del mercado de criptomonedas corre el
+                            riesgo de caer por debajo del Billón de dólares si no mejoran estas 3 métricas</span>
+                    </a>
+                </div>
+            </div>
+            <div class="tarjeta-notice">
+                <figure>
+                    <img src="../../../Assets/Images/notice5.jpg" alt="">
+                </figure>
+                <div class="contenido-notice">
+                    <a href="https://es.cointelegraph.com/news/fed-governor-explains-who-needs-crypto-regulation-and-why-demand-for-it-is-growing"
+                        class="link-notice">
+                        <span class="post-card_title-link">Gobernador de la Reserva Federal de Estados Unidos explica
+                            quién necesita la regulación de las criptomonedas y por qué crece su demanda</span>
+                    </a>
+                </div>
+            </div>
+            <div class="tarjeta-notice">
+                <figure>
+                    <img src="../../../Assets/Images/notice4.jpg" alt="">
+                </figure>
+                <div class="contenido-notice">
+                    <a href="https://es.cointelegraph.com/news/new-york-ag-warns-against-crypto-investments-amid-state-push-to-ban-mining"
+                        class="link-notice">
+                        <span class="post-card_title-link">La Fiscal General de Nueva York advierte sobre las
+                            inversiones en criptomonedas en medio de la presión del estado para prohibir la
+                            minería</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-notice3">
+            <div class="tarjeta-notice">
+                <figure>
+                    <img src="../../../Assets/Images/notice9.jpg" alt="">
+                </figure>
+                <div class="contenido-notice">
+                    <a href="https://es.cointelegraph.com/news/kenyan-energy-company-entices-bitcoin-miners-with-geothermal-power"
+                        class="link-notice">
+                        <span class="post-card_title-link">Una empresa energética keniana atrae a los mineros de Bitcoin
+                            con energía geotérmica</span>
+                    </a>
+                </div>
+            </div>
+            <div class="tarjeta-notice">
+                <figure>
+                    <img src="../../../Assets/Images/notice8.jpg" alt="">
+                </figure>
+                <div class="contenido-notice">
+                    <a href="https://es.cointelegraph.com/news/the-crypto-market-dropped-in-may-but-june-has-a-silver-lining"
+                        class="link-notice">
+                        <span class="post-card_title-link">El mercado de las criptomonedas cayó en mayo, pero junio
+                            tiene un lado positivo</span>
+                    </a>
+                </div>
+            </div>
+            <div class="tarjeta-notice">
+                <figure>
+                    <img src="../../../Assets/Images/notice7.jpg" alt="">
+                </figure>
+                <div class="contenido-notice">
+                    <a href="https://es.cointelegraph.com/news/alchemy-announces-support-for-solana-web3-applications-the-day-after-blockchain-halted"
+                        class="link-notice">
+                        <span class="post-card_title-link">Alchemy anuncia compatibilidad con las aplicaciones Web3 de
+                            Solana un día después de la paralización de la red</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER SECTION ============================================ -->
+    <footer>
+        <div class="footImg">
+            <img src="../../../Assets/Images/Logotypev4-ligth.png" alt="bitlevel-logotype" />
+        </div>
+        <div class="footLinks">
+            <!-- SOCIALS SECTION -->
+            <div class="footGroup">
+                <h2>Socials</h2>
+                <!-- Discord community -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/discord-icon.svg" alt="discord-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Discord community</a>
+                </div>
+                <!-- Instagram -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/instagram-icon.svg" alt="instagram-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+                <!-- Twitter -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/twitter-icon.svg" alt="twitter-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </div>
+                <!-- Telegram -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/telegram-iconsvg.svg" alt="telegram-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
+                </div>
+            </div>
+            <!-- SUPPORT SECTION -->
+            <div class="footGroup">
+                <h2>Support</h2>
+                <!-- Bitlevel academy -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/academy-icon.svg" alt="academy-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">BitLevel Academy</a>
+                </div>
+                <!-- FAQ -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/faq-icon.svg" alt="FAQ-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">FAQ</a>
+                </div>
+            </div>
+            <!-- ABOUT US SECTION -->
+            <div class="footGroup">
+                <h2>About Us</h2>
+                <!-- Github -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/github-icon.svg" alt="github-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                </div>
+                <!-- Devs section -->
+                <div>
+                    <img src="../../../Assets/Icons/Footer/developers-icon.svg" alt="devs-icon">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Devs</a>
+                </div>
+            </div>
+        </div>
+        <!-- Copy-right section -->
+        <div class="copyright">
+            <div>
+                <img src="../../../Assets/Icons/Footer/copyright-icon.svg" alt="copyright-icon">
+                <p>2022 BitLevel</p>
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript-->
+
+    <script src="../../../Common-scripts/changeTheme.js"></script>
+    <script src="../../../Common-scripts/menu-toggle.js"></script>
+    <script src="../js/load.js"></script>
+    
+
+</body>
+
+
+</html>
